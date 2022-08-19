@@ -5,6 +5,7 @@ RUN sed -i 's/\(!usr\/share\/i18n\/\)\(charmaps\/\)\(UTF-8.gz\)/\1\2\3 \1\2ISO-8
     && pacman -Sy \
     && pacman -S --noconfirm \
         glibc \
+        openssh \
         python \
         sudo \
     && pacman -Sc --noconfirm
